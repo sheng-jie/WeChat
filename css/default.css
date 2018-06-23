@@ -1,40 +1,32 @@
-body{
+html {
+    height: 100%;
+}
+
+body {
     max-width: 640px;
     min-width: 320px;
     height: 100%;
     width: 100%;
-    margin: 0 auto!important;
-    position: relative;
-    background-color: lightgray;
-}
-html{
-    height: 100%;
+    margin: 0 auto !important;
+    /* position: fixed; */
+    background-color: lightgray !important;
+    padding-bottom: 50px;
 }
 
-#discover img{
+.weui-tab img {
     width: 20px;
 }
+.weui-tab p{
+    margin: 0px !important;
+}
 
-.topbar{
-	height: 25px;
-    background-color:darkgray;
-    position: fixed;
-    z-index: 500;
-    right: 0;
-    left: 0;
-    width: 100%;
+.topbar {
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
 }
-.text1{
-	font-size: 14px;
-}
-.text2{
-	font-size: 14px;
-	float: right;
-	vertical-align: middle;
-}
-.clearfix:after {
-    content:""; 
-    display: block; 
-    clear:both; 
- }
 
+a {
+    text-decoration: none !important;
+}

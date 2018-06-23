@@ -1,55 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>WeUI</title>
     <link rel="stylesheet" href="css/default.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
 </head>
 
 <body>
-    <div class="topbar">
-        <a class="text1" style="margin-left: 5px;">中国移动</a>
-        <a>
-            <a class="text2" style="margin-right: 5px;">11:03</a>
-            <a class="text2">
-                <img src="img/电池.png" height="20px">
-            </a>
-            <a class="text2">
-                <img src="img/信号.png" height="20px">
-            </a>
-            <a class="text2">
-                <img src="img/wifi.png" height="20px">
-            </a>
-            <a class="text2">
-                <img src="img/闹钟.png" height="20px">
-            </a>
-            <a class="text2">
-                <img src="img/静音.png" height="20px">
-            </a>
-            <a class="text2">184K/s</a>
-        </a>
-    </div>
-    <div class="clearfix"></div>
+    <nav class="navbar navbar-default navbar-static-top" style="margin-bottom: -20px;">
+        <div>
+            <span>中国移动</span>
+            <div class="pull-right">
+                <span>11:03</span>
+                <span>
+                    <img src="img/电池.png" height="20px">
+                </span>
+                <a>
+                    <img src="img/信号.png" height="20px">
+                </a>
+                <a>
+                    <img src="img/wifi.png" height="20px">
+                </a>
+                <a>
+                    <img src="img/闹钟.png" height="20px">
+                </a>
+                <a>
+                    <img src="img/静音.png" height="20px">
+                </a>
+                <span>184K/s</span>
 
 
+            </div>
+            <div class="topbar">
+                <span style="margin:0 5px;">微信(9)</span>
 
-
+                <div class="pull-right">
+                    <span style="margin-right: 20px;">
+                        <img src="img/sousuo.png" height="20px">
+                    </span>
+                    <span style="margin-right: 10px;">
+                        <img src="img/jiahao.png" height="20px">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="weui-tab">
 
         <div class="weui-tab__bd">
             <div id="wechat" class="weui-tab__bd-item weui-tab__bd-item--active">
-                <h1>页面一</h1>
+                <div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd" style="margin-right: 10px">
+                            <img src="img/yue.jpg" style="width:50px ">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <span>Linda</span>
+                            <br>
+                            <small>中午去哪吃？</small>
+                        </div>
+                        <small>10:56</small>
+                    </a>
+
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                            <div class="weui-cell__hd" style="margin-right: 10px">
+                                <img src="img/订阅号.svg" style="width:50px ">
+                            </div>
+                            <div class="weui-cell__bd">
+                                <span>订阅号</span>
+                                <br>
+                                <small>深圳潮事儿：世界杯没中国队没劲？</small>
+                            </div>
+                            <small>09:16</small>
+                        </a>
+                </div>
             </div>
             <div id="contacts" class="weui-tab__bd-item">
-                <h1>页面二</h1>
+                <div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/contacts/添加好友.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>新的朋友</p>
+                        </div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/contacts/群聊.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>群聊</p>
+                        </div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/contacts/标签.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>标签</p>
+                        </div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/contacts/公众号.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>公众号</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div id="discover" class="weui-tab__bd-item">
                 <div class="weui-cells">
-                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <a class="weui-cell weui-cell_access" href="moment.html">
                         <div class="weui-cell__hd">
                             <img src="img/icon/dicovery/朋友圈.svg">
                         </div>
@@ -125,7 +195,80 @@
                 </div>
             </div>
             <div id="me" class="weui-tab__bd-item">
-                <h1>页面四</h1>
+                <div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd" style="margin-right: 10px">
+                            <img src="img/icon/me/伞.svg" style="width:50px ">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <span>圣杰</span>
+                            <br>
+                            <small>微信号:ysjshengjie</small>
+                        </div>
+
+                        <div class="weui-cell__hd pull-right">
+                            <img src="img/icon/me/二维码.png">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/me/钱包.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>钱包</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/me/收藏.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>收藏</p>
+                        </div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/me/相册.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>相册</p>
+                        </div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/me/卡包.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>卡包</p>
+                        </div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/me/表情.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>表情</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__hd">
+                            <img src="img/icon/me/设置.svg">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>设置</p>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
 
@@ -151,7 +294,9 @@
 
 
     <!--页面切换-->
-    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
 </body>
 
